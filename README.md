@@ -35,9 +35,20 @@
 
 ## 数据来源
 
-- **标签列表**：通过 [yande.re Tag API](https://yande.re/tag.json?limit=0) 拉取全站标签
-- **AI 翻译**：使用 [DeepSeek V3.2](https://www.deepseek.com/) 按标签类型分批翻译
-- **人工校对**：部分标签经过手动修正
+- [danbooru-0-zh 中文翻译](https://github.com/DominikDoom/a1111-sd-webui-tagcomplete/discussions/23)（含 NGA@猫舌头的阿巧 翻译）
+- [`EhTagTranslation/Database`](https://github.com/EhTagTranslation/Database)
+- 通过 [yande.re Tag API](https://yande.re/tag.json?limit=0) 拉取全站标签
+- 使用 [DeepSeek V3.2](https://www.deepseek.com/) 按标签类型分批翻译
+- 部分标签经过人工校对
+
+## 许可与声明
+
+本仓库的翻译数据整合自多个来源，各部分受其原始许可约束：
+
+- `EhTagTranslation` 数据库使用 [GNU FDL 1.2+](https://www.gnu.org/licenses/fdl-1.2.html) 与 [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/)
+- 其余社区翻译与 AI 翻译部分无额外限制
+
+在分发或二次利用前，请自行确认各数据源的许可条款是否满足你的使用场景。
 
 ## 如何使用
 
@@ -61,7 +72,3 @@ print(lookup.get("thighhighs"))  # 过膝袜
 ## 贡献翻译
 
 欢迎通过 Issue 或 Pull Request 提交翻译修正。
-
-## License
-
-[MIT License](LICENSE)
