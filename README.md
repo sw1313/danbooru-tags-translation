@@ -5,7 +5,7 @@
 ## 数据概览
 
 | 项目 | 数量 |
-|------|------|
+|---|---|
 | 标签总数 | 184,861 |
 | 已翻译 | 184,690 (99.9%) |
 | general (一般) | 27,815 |
@@ -28,16 +28,15 @@
 ```
 
 | 字段 | 说明 |
-|------|------|
-| `name` | 标签英文原名 |
-| `type` | 标签类型：`0` 一般、`1` 画师、`3` 版权/作品、`4` 角色、`5` 社团、`6` 元标签 |
-| `zh` | 中文翻译（为空字符串表示暂未翻译） |
+|---|---|
+| name | 标签英文原名 |
+| type | 标签类型：0 一般、1 画师、3 版权/作品、4 角色、5 社团、6 元标签 |
+| zh | 中文翻译（为空字符串表示暂未翻译） |
 
 ## 数据来源
 
-- **基础翻译**：[DominikDoom/a1111-sd-webui-tagcomplete](https://github.com/DominikDoom/a1111-sd-webui-tagcomplete/issues/23) 社区贡献的中文翻译
-- **标签补全**：通过 yande.re Tag API (`/tag.json?limit=0`) 拉取全站标签，确保覆盖所有在用标签
-- **AI 翻译**：未覆盖的标签使用 DeepSeek V3 按标签类型分批翻译
+- **标签列表**：通过 [yande.re Tag API](https://yande.re/tag.json?limit=0) 拉取全站标签
+- **AI 翻译**：使用 [DeepSeek V3.2](https://www.deepseek.com/) 按标签类型分批翻译
 - **人工校对**：部分标签经过手动修正
 
 ## 如何使用
@@ -65,4 +64,4 @@ print(lookup.get("thighhighs"))  # 过膝袜
 
 ## License
 
-公共领域，自由使用。
+[MIT License](LICENSE)
