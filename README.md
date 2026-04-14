@@ -69,6 +69,3 @@ lookup = {t["name"]: t["zh"] for t in tags if t["zh"]}
 print(lookup.get("thighhighs"))  # 过膝袜
 ```
 
-## 贡献翻译
-
-欢迎通过 Issue 或 Pull Request 提交翻译修正。
